@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
 import { Layout, Menu, Icon, Breadcrumb } from 'antd';
+import './App.css';
+
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
 const { Header, Content, Footer } = Layout;
@@ -11,7 +11,6 @@ class App extends Component {
     current: 'mail',
   }
   handleClick = (e) => {
-    console.log('click ', e);
     this.setState({
       current: e.key,
     });
@@ -19,7 +18,7 @@ class App extends Component {
   render() {
     return (
       <Layout className="layout">
-        <Header className = "header">
+        <Header className="header">
           <div className="logo" />
           <Menu
             onClick={this.handleClick}
@@ -43,7 +42,7 @@ class App extends Component {
               </MenuItemGroup>
             </SubMenu>
             <Menu.Item key="contact">
-            <Icon type = "mail" />
+              <Icon type="mail" />
               Contact Us
             </Menu.Item>
           </Menu>
@@ -55,25 +54,15 @@ class App extends Component {
             <Breadcrumb.Item>App</Breadcrumb.Item>
           </Breadcrumb>
           <div style={{ background: '#fff', padding: 24, minHeight: 280 }}>
-          <p>fafda</p>
-          <p>fafda</p>
-          <p>fafda</p><p>fafda</p><p>fafda</p><p>fafda</p><p>fafda</p><p>fafda</p><p>fafda</p><p>fafda</p><p>fafda</p><p>fafda</p>
-          <p>fafda</p><p>fafda</p><p>fafda</p><p>fafda</p><p>fafda</p><p>fafda</p><p>fafda</p>
-          <p>fafda</p><p>fafda</p><p>fafda</p><p>fafda</p><p>fafda</p><p>fafda</p><p>fafda</p><p>fafda</p><p>fafda</p><p>fafda</p>
-          <p>fafda</p><p>fafda</p><p>fafda</p>
-          fdas
-          
-          
-          fdafda
-          fdafda
-          fdafda
-          
-          fdafda
-          
-          fdafda
-          
-          fdafda
-          
+            <p>fafda</p>
+            <p>fafda</p>
+            <p>fafda</p><p>fafda</p><p>fafda</p>
+            <p>fafda</p><p>fafda</p><p>fafda</p><p>fafda</p>
+            <p>fafda</p><p>fafda</p><p>fafda</p>
+            <p>fafda</p><p>fafda</p><p>fafda</p><p>fafda</p><p>fafda</p><p>fafda</p><p>fafda</p>
+            <p>fafda</p><p>fafda</p><p>fafda</p>
+            <p>fafda</p><p>fafda</p><p>fafda</p><p>fafda</p><p>fafda</p><p>fafda</p><p>fafda</p>
+            <p>fafda</p><p>fafda</p><p>fafda</p>
           </div>
         </Content>
         <Footer style={{ textAlign: 'center' }}>
@@ -85,5 +74,3 @@ class App extends Component {
 }
 
 export default App;
-
-
